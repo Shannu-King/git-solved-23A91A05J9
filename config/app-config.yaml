@@ -2,20 +2,37 @@ application:
   name: DevOpsSimulator
   version: 1.0.0
   environment: production
-  
-server:
+  server:
   host: 0.0.0.0
   port: 8080
   ssl_enabled: true
-  
-logging:
+  logging:
   level: INFO
   format: json
-  
-# Development configuration (enabled via environment variable)
+  # Development configuration (enabled via environment variable)
 development:
   enabled: false
   port: 3000
   hot_reload: false
   debug_mode: false
   mock_apis: false
+
+# --- Experimental Features (from conflict-simulator) ---
+# --- Not for production use ---
+#
+# ai_features:
+#   predictive_scaling: true
+#   anomaly_detection: true
+#   auto_optimization: true
+#   model_version: "v2.1.0"
+#
+# cloud_providers:
+#   - aws
+#   - azure
+#   - gcp
+#   - digitalocean
+#
+# security:
+#   zero_trust: enabled
+#   encryption: AES-256
+#   audit_logging: comprehensive
